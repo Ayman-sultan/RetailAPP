@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+
+    <ImageView
+        android:id="@+id/product_cart_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:maxWidth="120dp"
+        android:maxHeight="120dp"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_title_cart_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Activ Round Toe"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/product_cart_iv"
+        app:layout_constraintTop_toTopOf="@id/product_cart_iv" />
+
+
+    <TextView
+        android:id="@+id/product_details_cart_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="omar test etsidhasjdliahsd;liaalshdlajhsdlja"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/product_title_cart_tv"
+        app:layout_constraintTop_toBottomOf="@id/product_title_cart_tv" />
+
+    <TextView
+        android:id="@+id/product_price_cart_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="600 EGP"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/product_details_cart_tv"
+        app:layout_constraintTop_toBottomOf="@id/product_details_cart_tv" />
+
+
+    <ImageButton
+        android:id="@+id/dec_item_cart_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_remove"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/quantity_tv"
+        app:layout_constraintEnd_toStartOf="@id/quantity_tv"
+        app:layout_constraintTop_toTopOf="@+id/quantity_tv" />
+
+    <TextView
+        android:id="@+id/quantity_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="2"
+        android:gravity="center"
+        android:maxEms="2"
+        android:maxLines="1"
+        android:text="test"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/product_price_cart_tv"
+        app:layout_constraintEnd_toStartOf="@+id/inc_item_cart_ib"
+        app:layout_constraintTop_toTopOf="@id/product_price_cart_tv" />
+
+    <ImageButton
+        android:id="@+id/inc_item_cart_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/ic_add"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/quantity_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/quantity_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

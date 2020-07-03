@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="user_name">ادخل اسمك</string>
+    <string name="password">ادخل كلمة السر</string>
+    <string name="welcome_in_app">مرحبًا في التطبيق</string>
+    <string name="are_you_sure">أنت أتجننت ؟!!!!!!!!!!!!!</string>
+    <string name="shirt_dress">فستان</string>
+
+</resources>

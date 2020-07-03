@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Retail62</string>
+
+
+    <string name="user_name">Enter user name</string>
+    <string name="password">Enter your password</string>
+    <string name="welcome_in_app">Welcome in app</string>
+    <string name="are_you_sure">Are you sure ?</string>
+    <string name="shirt_dress">Shirt Dress</string>
+
+
+</resources>
